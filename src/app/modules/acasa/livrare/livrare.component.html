@@ -1,0 +1,40 @@
+<div class = "container">
+    <div class = "form-sections">
+        <div>Introdu adresa de livrare</div>
+
+        <form [formGroup] = "livrareForm" class ="form">
+            <mat-form-field appearance = "outline">
+                <mat-label> Oras </mat-label>
+                <input matInput placeholder="Oras" formControlName = "oras"/>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field appearance = "outline">
+                <mat-label> Strada </mat-label>
+                <input matInput placeholder="Strada" formControlName = "strada"/>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field appearance = "outline">
+                <mat-label> Bloc </mat-label>
+                <input matInput placeholder="Bloc" formControlName = "bloc"/>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field appearance = "outline">
+                <mat-label> Apartament </mat-label>
+                <input matInput placeholder="Apartament" formControlName = "apartament"/>
+            </mat-form-field>
+
+
+        </form> 
+
+        <button mat-raised-button (click) = "plaseazaComanda()" class="buton-comanda">
+            Plaseaza comanda 
+        </button>
+
+    </div>
+</div>

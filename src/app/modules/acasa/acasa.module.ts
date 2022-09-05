@@ -7,12 +7,14 @@ import { AcasaComponent } from './acasa/acasa.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { materialize } from 'rxjs';
 import { MaterialModule } from '../material/material.module';
+import { LivrareComponent } from './livrare/livrare.component';
 
 
 @NgModule({
   declarations: [
     ProduseComponent,
-    AcasaComponent
+    AcasaComponent,
+    LivrareComponent
   ],
   imports: [
     CommonModule,

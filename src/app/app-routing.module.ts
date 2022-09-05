@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RequiredValidator } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 
@@ -8,9 +9,19 @@ const routes: Routes = [
   canActivate: [AuthGuard],
   children: [
     {
-      path: 'acasa',
+      path: 'acasa',  
       loadChildren: ()=> import ('src/app/modules/acasa/acasa.module').then(m => m.AcasaModule)
     },
+
+    {
+      path: 'produse',
+      redirectTo: 'acasa/produse'
+    },
+
+    {
+      path: 'livrare',
+      redirectTo: 'acasa/livrare'
+    }
   ]
 },
 

@@ -36,7 +36,7 @@ export class ProduseComponent implements OnInit {
   }
 
   public cauta(): void{
-    alert(this.marca)
+    alert(this.marca.value)
   }
 }
 
