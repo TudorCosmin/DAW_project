@@ -38,5 +38,9 @@ export class ProduseComponent implements OnInit {
   public cauta(): void{
     alert(this.marca.value)
   }
+
+  public goToProdusPage(id: any): void {
+    this.router.navigate(['/produs', id]);
+  }
 }
 

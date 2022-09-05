@@ -8,13 +8,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { materialize } from 'rxjs';
 import { MaterialModule } from '../material/material.module';
 import { LivrareComponent } from './livrare/livrare.component';
+import { ProdusComponent } from './produs/produs.component';
 
 
 @NgModule({
   declarations: [
     ProduseComponent,
     AcasaComponent,
-    LivrareComponent
+    LivrareComponent,
+    ProdusComponent
   ],
   imports: [
     CommonModule,
