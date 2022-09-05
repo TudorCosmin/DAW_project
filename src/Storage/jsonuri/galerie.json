@@ -1,0 +1,26 @@
+{
+	"cale_galerie": "Storage/Images/Galerie",
+	"imagini": [
+		{
+			"fisier": "albina.jpg",
+			"descriere": "albina in zbor"
+		},
+		{
+			"fisier": "masina.jpg",
+			"descriere": "masina si stele"
+		},
+		{
+			"fisier": "padure.jpg",
+			"descriere": "padure in sus"
+		},
+		{
+			"fisier": "padure2.jpg",
+			"descriere": "padure pe verticala in us"
+		},
+		{
+			"fisier": "viespe.jpg",
+			"descriere": "viespe ceva"
+		}
+		
+	]
+}

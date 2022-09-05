@@ -1,0 +1,247 @@
+{
+	"cale_galerie": "Storage/Images/Galerie",
+	"imagini": [
+		{
+			"cale_relativa": "galerie1.jpg",
+			"nume": "padure toamna",
+			"descriere": "Drum in padure",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie2.jpg",
+			"nume": "copac",
+			"descriere": "Copac toamna",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie3.jpg",
+			"nume": "padure toamna 2",
+			"descriere": "Drum in padure",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie4.jpg",
+			"nume": "windows background",
+			"descriere": "Dealuri",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie5.jpg",
+			"nume": "apus",
+			"descriere": "Apus",
+			"timp": "noapte"
+		},
+
+		{
+			"cale_relativa": "galerie6.jpg",
+			"nume": "casa",
+			"descriere": "Casa in munti",
+			"timp": "dimineata"
+		},
+
+		{
+			"cale_relativa": "galerie7.jpg",
+			"nume": "drum copaci",
+			"descriere": "Drum copaci",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie8.jpg",
+			"nume": "Drum copaci nevesel",
+			"descriere": "Drum copaci nevesel",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie9.jpg",
+			"nume": "drum padure",
+			"descriere": "Drum padure",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie10.jpg",
+			"nume": "stalp",
+			"descriere": "Stalp si stele",
+			"timp": "noapte"
+		},
+
+		{
+			"cale_relativa": "galerie11.jpg",
+			"nume": "luna",
+			"descriere": "Luna",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie12.jpg",
+			"nume": "rau",
+			"descriere": "Stele",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie13.jpg",
+			"nume": "reclama apa hera",
+			"descriere": "Copaci si stele",
+			"timp": "noapte"
+		},
+
+		{
+			"cale_relativa": "galerie14.jpg",
+			"nume": "poteca",
+			"descriere": "Poteca",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie15.jpg",
+			"nume": "munte",
+			"descriere": "Munte",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie16.jpg",
+			"nume": "static",
+			"descriere": "Bloc",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie17.jpg",
+			"nume": "carlos",
+			"descriere": "Cactus",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie18.jpg",
+			"nume": "stele stalp",
+			"descriere": "Stalp Stele",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie19.jpg",
+			"nume": "poarta Raiului",
+			"descriere": "Bloc",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie20.jpg",
+			"nume": "apus crengi",
+			"descriere": "Apus",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie21.jpg",
+			"nume": "apus crengi2",
+			"descriere": "Apus",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie22.jpg",
+			"nume": "apus crengi3",
+			"descriere": "Apus",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie23.jpg",
+			"nume": "apus crengi4",
+			"descriere": "Apus",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie24.jpg",
+			"nume": "apus crengi5",
+			"descriere": "Apus",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie25.jpg",
+			"nume": "film",
+			"descriere": "Role film",
+			"timp": "zi",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie26.jpg",
+			"nume": "star trails",
+			"descriere": "Star trails",
+			"timp": "noapte"
+		},
+
+		{
+			"cale_relativa": "galerie27.jpg",
+			"nume": "swarovski",
+			"descriere": "Piatra swarovski",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie28.jpg",
+			"nume": "swarovski2",
+			"descriere": "Piatra swarovski",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie29.jpg",
+			"nume": "drum copaci stanga dreapta",
+			"descriere": "Drum",
+			"timp": "dimineata",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie30.jpg",
+			"nume": "luna plina",
+			"descriere": "Luna plina",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		},
+
+		{
+			"cale_relativa": "galerie31.jpg",
+			"nume": "luna plina 2",
+			"descriere": "Luna plina",
+			"timp": "noapte",
+			"galerie_animata" : "true"
+		}
+	]
+}

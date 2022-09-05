@@ -1,0 +1,99 @@
+@use 'sass:list';
+
+/* fac aici generarea random pentru ca il compilez online
+@use 'sass:math';
+$lista_numar_imagini: (9, 12, 15);
+$indice:math.random(list.length($lista_numar_imagini));
+$nrimag: list.nth($lista_numar_imagini, $indice);*/
+
+$nrimag: 15 !default;
+$w: 300px;
+$h: 375px;
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.container_galerie {
+  border: 1px solid black;
+  width: $w;
+  height: $h;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid_galerie {
+  display: grid;
+  width:  5 * $w;
+  grid-template-columns: $w $w $w $w $w;
+  grid-template-rows: $h $h $h;
+  position: absolute;
+
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+  top: 0;
+  left: 0;
+
+  animation-name: animatie_galerie;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: $nrimag * 4s;
+  animation-play-state: running;
+}
+
+div.grid_galerie:hover {
+	animation-play-state: paused;
+}
+
+
+$coord:((0,0), (-$h,0), (-$h, -2*$w), (-$h, -$w), (0,-$w), (0, -2*$w), (-2*$h, -2*$w), (-2*$h, 0), (-2*$h, -$w), (-2*$h, -3*$w), (-$h, -3*$w), (0, -3*$w), (0, -4*$w), (-$h, -4*$w), (-2*$h, -4*$w));
+
+@keyframes animatie_galerie {
+0%{
+  top: 0px;
+  left: 0;
+  }
+
+$pas: 100 / ($nrimag - 1);
+@for $i from 2 through $nrimag {
+  $procentaj: $pas*($i - 1);
+
+  #{$procentaj - 1}% {
+    top: list.nth( list.nth($coord, $i),1);
+    left: list.nth( list.nth($coord, $i),2);
+    
+    /*
+    transform: rotate(0deg);
+    transform-origin: (list.nth(list.nth($coord, $i),1) + ($h / 2)) (list.nth( list.nth($coord, $i) , 2) + ($w / 2));
+    */
+  }
+
+  #{$procentaj}% {
+    top: list.nth( list.nth($coord, $i),1);
+    left: list.nth( list.nth($coord, $i),2);
+    
+    /*
+    transform: rotate(360deg);
+    transform-origin: (list.nth(list.nth($coord, $i),1) + ($h / 2)) (list.nth( list.nth($coord, $i) , 2) + ($w / 2));
+    */
+  }
+}
+
+}
+
+.container_galerie figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255,255,255,0.7);
+  width: $w;
+  text-align: center;
+}
+
+.container_galerie figure {
+  position: relative;
+  width: $w;
+  height: $h;
+}

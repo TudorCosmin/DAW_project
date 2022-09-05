@@ -1,0 +1,254 @@
+/*@media only screen and (max-width: 700px) {*/
+	.body {
+
+		--main-border: 1px solid grey;
+		--font: "Times New Roman", Times, serif;
+		--text-normal: 1rem;
+		--text-mare: 1.5rem;
+
+		--culoare1: #56D92E;/*#DDFA7D;*/
+		--culoare2: #DEDA6F;
+		--culoare3: #F5E787;
+		--culoare4: #FAD17D;
+
+		background-image: url(../Images/padure2.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	/* ------------------------------ meniu B-) ------------------------------ */
+
+	nav span {
+		display: none;
+	}
+
+	nav {
+		height: 50px;
+		width: 100%;
+		top: 0;
+		padding: 0;
+		background: var(--culoare3);
+		z-index: 99;
+
+		position: sticky;
+	}
+
+	#burger {
+		background-color: var(--culoare3);
+		border: none;
+		height: 100%;
+	}
+	
+	.meniu {
+		display: none;
+	}
+
+	#burger:focus + .meniu{
+		display: block;
+		
+		animation: afisare-meniu 1s;
+		transform: rotate(0deg);
+	}
+
+	@keyframes afisare-meniu {
+		0% {
+			transform: rotate(-90deg);
+			transform-origin: top left;
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	nav ul, nav li {
+		padding: 0;
+		margin: 0;
+		outline: 1px solid black;
+	}
+
+	nav ul.meniu ul {
+	    display: none;
+	    position: absolute;
+	    width: 100%;
+	}
+
+	nav ul.meniu li {
+		text-align: center;
+		list-style-type: none;
+		background: var(--culoare3);
+		cursor: pointer;
+	}
+
+	nav ul.meniu li a, nav ul.meniu li div {
+		text-decoration: none;
+		color: black;
+		display: block;
+		font-weight: bold;
+		height: 70px;
+		line-height: 4rem;
+	}
+
+	.element-meniu {
+		background : var(--culoare3);
+		transition: 500ms;
+	}
+
+	.element-meniu:hover{
+		background: var(--culoare2);
+		transition: 500ms;
+	}
+
+	.element-submeniu {
+		background : var(--culoare3);
+		transition: 500ms;
+	}
+
+	.element-submeniu:hover{
+		background: var(--culoare2);
+		transition: 500ms;
+	}
+
+	.element-meniu-singur {
+		background : var(--culoare3);
+		transition: 500ms;
+	}
+
+	.element-meniu-singur:hover{
+		background: var(--culoare2);
+		transition: 500ms;
+	}
+
+
+
+	.element-meniu:hover + .submeniu {
+		display: block;
+
+		animation: afisare-submeniu 200ms;
+	}
+
+	.submeniu:hover {
+		display: block;
+	}
+
+	@keyframes afisare-submeniu {
+		0% {
+			transform: rotate(0deg);
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+
+
+	/*.element-meniu-singur:hover::after {
+	    background: linear-gradient(to right, var(--culoare3), var(--culoare1));
+
+	    animation-duration: 250ms;
+	    animation-name: gradientt;
+	    animation-timing-function: linear;
+	    content: "";
+	    
+	    display: block;
+	    width: 100%;
+	    height: 7px;
+	}
+
+	@keyframes gradientt {
+	    0% {
+	        background-size: 500% 100%;
+	    }
+	    100% {
+	        background-size: 100% 100%;
+	    }
+	}*/
+
+
+	/* ------------------------------ grid ------------------------------ */
+
+	#grid-pagina {
+	    display: grid;
+	    grid-template-columns: 1fr;
+	    grid-template-areas:
+	        "prezentare"
+	        "utilizatori-online"
+	        "date-utilizatori"
+	        "date-site"
+	        "calendar"
+	        "tabel"
+	        "anunturi"
+	        "diverse"
+	    padding: 4%;
+        grid-gap: 1.5rem;
+	    height: auto;
+	}
+
+	#prezentare {
+	    /*background-color: red;*/
+	    grid-row: 1;
+	    padding: 0.1em 0.5em;
+	}
+
+	#utilizatori-online {
+	    background-color: green;
+	    grid-column: 1;
+	    grid-row: 2;
+	    padding: 0.1em 0.5em;
+	}
+
+	#date-utilizatori {
+	    background-color: blue;
+	    grid-column: 1;
+	    grid-row: 3;
+	    padding: 0.1em 0.5em;
+	}
+
+	#date-site {
+	    background-color: pink;
+	    grid-column: 1;
+	    grid-row: 4;
+	    padding: 0.1em 0.5em;
+	}
+
+	#calendar {
+	    background-color: brown;
+	    grid-column: 1;
+	    grid-row: 5;
+	    padding: 0.1em 0.5em;
+	}
+
+	#anunturi {
+	    background-color: orange;
+	    grid-column: 1;
+	    grid-row: 6;
+	    padding: 0.1em 0.5em;
+	}
+
+	#tabel {
+	    background-color: yellow;
+	    grid-column: 1;
+	    grid-row: 7;
+	    padding: 0.1em 0.5em;
+	}
+
+	#diverse {
+	    background-color: cyan;
+	    grid-column: 1;
+	    grid-row: 8;
+	    padding: 0.1em 0.5em;
+	}
+
+	/* ------------------------------ banner ------------------------------ */
+
+	.banner {
+		visibility: hidden;
+	}
+
+}

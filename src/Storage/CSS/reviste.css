@@ -1,0 +1,23 @@
+.grid-reviste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4%;
+    grid-gap: 1.5rem;
+    height: auto;
+}
+
+.grid-reviste > .revista:nth-child(6n+1),
+.grid-reviste > .revista:nth-child(6n+2),
+.grid-reviste > .revista:nth-child(6n+3) {
+    background-color: #add8e6;
+}
+
+.revista {
+    transition: 1s background-color;
+    /*transition: 1s font-weight;*/
+}
+
+.revista:hover {
+    background-color: rgba(255, 0, 0, 0.85);
+    font-weight: 900;
+}

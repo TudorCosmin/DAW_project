@@ -1,0 +1,9 @@
+@use 'sass:list';
+@use 'sass:math';
+$lista_numar_imagini: (9, 12, 15);
+$indice:math.random(list.length($lista_numar_imagini));
+
+
+@use '../Storage/SASS/galerie-animata-cod' with (
+	$nrimag: list.nth($lista_numar_imagini, $indice)
+);

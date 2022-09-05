@@ -1,0 +1,133 @@
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+	.body {
+
+		--main-border: 1px solid grey;
+		--font: "Times New Roman", Times, serif;
+		--text-normal: 1.1rem;
+		--text-mare: 1.7rem;
+
+		--culoare1: #56D92E;/*#DDFA7D;*/
+		--culoare2: #DEDA6F;
+		--culoare3: #F5E787;
+		--culoare4: #FAD17D;
+
+		background-image: url(../Images/padure.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	/* ------------------------------ meniu B-) ------------------------------ */
+	#burger {
+		display: none;
+	}
+
+	nav span {
+		display: none;
+	}
+
+	#casa {
+		width: 20px;
+		height: 20px;
+	}
+
+	nav {
+		height: 70px;
+		width: 100%;
+		top: 0;
+		padding: 0;
+		background: var(--culoare3);
+		z-index: 99;
+
+		position: sticky;
+	}
+
+	nav ul, nav li {
+		padding: 0;
+		margin: 0;
+		outline: 1px solid black;
+	}
+
+	nav ul.meniu ul {
+	    display: none;
+	    position: absolute;
+	    width: 100%;
+	}
+
+	nav ul.meniu li {
+		text-align: center;
+		list-style-type: none;
+		background: var(--culoare3);
+		cursor: pointer;
+	}
+
+	nav ul.meniu > li {
+		float: left;
+		width: 20%;
+		position: relative;
+	}
+
+	nav ul.meniu li a, nav ul.meniu li div {
+		text-decoration: none;
+		color: black;
+		display: block;
+		font-weight: bold;
+		height: 70px;
+		line-height: 4rem;
+	}
+
+	.element-meniu:hover + .submeniu {
+		display: block;
+
+		animation: afisare-submeniu 200ms;
+	}
+
+	.submeniu:hover {
+		display: block;
+	}
+
+	@keyframes afisare-submeniu {
+		0% {
+			transform: scaleY(0.1);
+		}
+		100% {
+			transform: scaleY(1);
+		}
+	}
+
+
+	.element-meniu-singur:hover::after {
+	    background: linear-gradient(to right, var(--culoare3), var(--culoare1));
+
+	    animation-duration: 250ms;
+	    animation-name: gradientt;
+	    animation-timing-function: linear;
+	    content: "";
+	    
+	    display: block;
+	    width: 100%;
+	    height: 7px;
+	}
+
+	@keyframes gradientt {
+	    0% {
+	        background-size: 500% 100%;
+	    }
+	    100% {
+	        background-size: 100% 100%;
+	    }
+	}
+
+	/* ------------------------------ banner ------------------------------ */
+
+	.banner {
+		visibility: hidden;
+	}
+}
