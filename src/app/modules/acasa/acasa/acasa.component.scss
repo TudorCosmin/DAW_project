@@ -1,280 +1,35 @@
+.buton-logout {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+@media (min-width: 768px) {
+  .buton-logout {
+    padding: 10px 30px;
+  }
+}
 
-/* ------------------------------ chestii main si footer ------------------------------ */
-
-main {
-    background: var(--culoare_background);
-    border-left: var(--main-border);
-    border-right: var(--main-border);
-    padding: 20px;
-    padding-top: 0px;
-  }
-  
-  footer {
-    background: var(--culoare_background);
-    border-left: var(--main-border);
-    border-right: var(--main-border);
-    padding: 20px;
-  }
-  
-  
-  /* ------------------------------ dark mode ------------------------------ */
-  
-  .checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  .label {
-    background-color: var(--culoare2);
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
+.container {
+    min-height: 100vh;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    transform: scale(1.5);
-  }
-  
-  .label .ball {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked + .label .ball {
-    transform: translateX(24px);
-  }
-  
-  .checkbox:checked + .main {
-    --culoare_background: red;
-    background: var(--culoare_background);
-  }
-  
-  .fa-moon {
-    color: #f1c40f;
-  }
-  
-  .fa-sun {
-    color: #f39c12;
-  }
-  
-  
-  
-  /* ------------------------------ prezentare (zona 1) ------------------------------ */
-  
-  #imagine-prezentare {
-      width: 40%;
-      float: right;
-  }
-  
-  p.descriere {
-      text-align: left;
-      text-align-last: left;
-  
-      font-family: var(--font);
-      font-size: var(--text-normal);
-      font-weight: normal;
-  }
-        
-  p.uimit {
-      text-align: left;
-      text-align-last: left;
-  
-      font-family: var(--font);
-      font-size: var(--text-mare);
-      font-weight: normal;
-  }
-  
-  p.vrajeli {
-      text-align: left;
-      text-align-last: left;
-  
-      font-family: var(--font);
-      font-size: var(--text-normal);
-      font-weight: normal;
-  }
-  
-  /* ------------------------------ tabel ------------------------------ */
-  
-  #tab-orar {
-    text-align: center;
-  }
-  
-  th {
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-  }
-  
-  td {
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    font-weight:normal;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-  }
-  
-  thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-  }
-  
-  tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-  }
-  
-  tfoot {
-    display: table-footer-group;
-    vertical-align: middle;
-    border-color: inherit;
-  }
-  
-  table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    /*border-spacing: 10px;*/
-    border-color: grey;
-    outline: 1px solid black;
-  }
-  
-  /* ------------------------------ iframe ------------------------------ */
-  
-  .taburi-iframe {
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
-    border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-image: linear-gradient(white, white 10%, var(--culoare4));
-  
-    text-decoration: none;
-    text-align: center;
-    font: 14px Arial Black;
-    color: var(--culoare1);
-  
-    transition: all 3s;
-  }
-  
-  .taburi-iframe:hover {
-    background-image: linear-gradient(white, white 10%, var(--culoare1));
-  }
-  
-  .taburi-iframe:hover .text-iframe{
-    color: var(--culoare2);
-  }
-  
-  .container-linkuri {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0;
-  }
-  
-  .container-iframe {
     display: flex;
-    flex-direction: row;
-  }
-  
-  #linkuri iframe {
-    position: relative;
-    max-width: 700px;
-    width: 100%;
-    /*margin: auto;*/
-    left: auto;
-  }
-  
-  /* ------------------------------ hr stilizat ------------------------------ */
-  
-  #hr-stilizat {
-    height: 5px;
-    margin-left: 2px;
-    background: repeating-linear-gradient(var(--culoare1), var(--culoare3) 20%);
-    border-radius: 3px;
-  }
-  
-  /* ------------------------------ buton top ------------------------------ */
-  
-  .parinte-triunghiulet {
-    width: 20px;
-    height: 20px;
-    border-radius: 9px;
-    border-left: 2px solid black;
-    border-right: 2px solid black; 
-  
-    opacity: 40%;
-    transition: all 400ms;
-  }
-  
-  .triunghiulet {
-    width: 0; 
-    height: 0; 
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 11px solid black;
-  
-    transform: translateX(3px);
-  
-    position: absolute; 
-    bottom: 0;
-  
-    transition: all 400ms;
-  }
-  
-  .text-jos {
-    display: block;
-    visibility: hidden;
-    transition-delay: 400ms;
-  
-    transform: translateX(-12px);
-  }
-  
-  .parinte-triunghiulet:hover {
-    opacity: 100%;
-  }
-  
-  .parinte-triunghiulet:hover .triunghiulet{
-    visibility: visible;
-    transform: translateY(-10px);
-    border-bottom: 11px solid var(--culoare1);
-  }
-  
-  .parinte-triunghiulet:hover .text-jos {
-    visibility: visible;
-  }
-  
-  .buton-top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    right: 90px;
-    z-index: 10;
-    cursor: pointer;
-  }
-  
-  /* ------------------------------ copyright ------------------------------*/
-  
-  .copyright {
     text-align: center;
   }

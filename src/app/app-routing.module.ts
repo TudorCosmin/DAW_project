@@ -20,7 +20,7 @@ const routes: Routes = [
 },
 
 {
-  path: 'login',
+  path: 'register',
   loadChildren: ()=> import ('src/app/modules/auth/auth.module').then(m => m.AuthModule)
 },
 

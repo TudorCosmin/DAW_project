@@ -1,1 +1,33 @@
-<p>register works!</p>
+<div class = "container">
+    <div class = "form-sections">
+        <form [formGroup] = "loginForm" class ="form">
+            Introduceti numele de utilizator:
+            <mat-form-field appearance = "outline">
+                <mat-label> Utilzator </mat-label>
+                <input matInput placeholder="Username" formControlName = "username"/>
+            </mat-form-field>
+
+            <br>
+
+            Introduceti parola: 
+            <mat-form-field appearance = "outline">
+                <mat-label> Parola </mat-label>
+                <input matInput placeholder="Password" type="password" formControlName = "password"/>
+            </mat-form-field>
+
+            <br>
+
+            Reintroduceti parola: 
+            <mat-form-field appearance = "outline">
+                <mat-label> Parola </mat-label>
+                <input matInput placeholder="Password" type="password" formControlName = "password"/>
+            </mat-form-field>
+
+        </form> 
+
+        <button mat-raised-button (click) = "login()" class="buton-login">
+            Register 
+        </button>
+
+    </div>
+</div>
