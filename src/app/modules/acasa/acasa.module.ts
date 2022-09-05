@@ -5,6 +5,8 @@ import { AcasaRoutingModule } from './acasa-routing.module';
 import { ProduseComponent } from './produse/produse.component';
 import { AcasaComponent } from './acasa/acasa.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { materialize } from 'rxjs';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     AcasaRoutingModule,
     ReactiveFormsModule,
+    MaterialModule
   ]
 })
 export class AcasaModule { }

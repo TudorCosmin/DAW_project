@@ -36,7 +36,7 @@ export class ProduseComponent implements OnInit {
   }
 
   public cauta(): void{
-    this.router.navigate(['/acasa']);
+    alert(this.marca)
   }
 }
 
