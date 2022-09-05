@@ -15,13 +15,23 @@ const routes: Routes = [
 },
 
 {
-  path: 'login',
+  path: 'auth',
   loadChildren: ()=> import ('src/app/modules/auth/auth.module').then(m => m.AuthModule)
 },
 
 {
+  path: 'login',
+  redirectTo: 'auth/login'
+},
+
+{
   path: 'register',
-  loadChildren: ()=> import ('src/app/modules/auth/auth.module').then(m => m.AuthModule)
+  redirectTo: 'auth/register'
+},
+
+{
+  path: 'produse',
+  loadChildren: ()=> import ('src/app/modules/acasa/acasa.module').then(m => m.AcasaModule)
 },
 
 {
